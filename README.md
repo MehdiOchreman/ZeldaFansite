@@ -1,2 +1,2 @@
 # ZeldaFansite
-A fansite for an app academy assignment
+ home page almost complete, still need to fix border glow

@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'botw_sheikahregular';
+    src: url('botw_sheikah-webfont.woff2') format('woff2'),
+        url('botw_sheikah-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hylia_serif_betaregular';
+    src: url('hyliaserifbeta-regular-webfont.woff2') format('woff2'),
+        url('hyliaserifbeta-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'botw_sheikahregular';
+    color: rgb(202, 247, 247);
+    -webkit-animation: textglow 1s ease-in-out infinite alternate;
+    -moz-animation: textglow 1s ease-in-out infinite alternate;
+    animation: textglow 1s ease-in-out infinite alternate;
+}
+
+body{
+    margin: 0%;
+    background-image: url("bezel.jpg");
+    background-size:100%;
+    background-position:inherit;
+    background-repeat: no-repeat;
+
+}
+
+body > h2{
+    position: absolute;
+    left: 107px;
+    top: 270px;
+    font-family: 'botw_sheikahregular';
+    color: rgb(202, 247, 247);
+    -webkit-animation: textglow 1s ease-in-out infinite alternate;
+    -moz-animation: textglow 1s ease-in-out infinite alternate;
+    animation: textglow 1s ease-in-out infinite alternate;
+}
+
+.links{
+    position: absolute;
+    right: 225px;
+    top: 90px;
+    -webkit-animation: textglow 1s ease-in-out infinite alternate;
+    -moz-animation: textglow 1s ease-in-out infinite alternate;
+    animation: textglow 1s ease-in-out infinite alternate;
+}
+
+.links > a{
+    color: rgb(202, 247, 247);
+    font-family: 'botw_sheikahregular';
+    font-size: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color:rgba(0, 1, 43, 0.389) ;
+    -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+    -moz-animation: boxglow 1s ease-in-out infinite alternate;
+    animation: boxglow 1s ease-in-out infinite alternate;
+
+}
+
+.quotes{
+    margin-top: 10%;
+    margin-right: 80%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-family: 'hylia_serif_betaregular';
+    color: rgb(202, 247, 247);
+    -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+    -moz-animation: boxglow 1s ease-in-out infinite alternate;
+    animation: boxglow 1s ease-in-out infinite alternate;
+    border-radius: 10px;
+    background-color: rgba(0, 1, 43, 0.389);
+
+}
+
+.quotes > div{
+
+    margin: 0 0 0px;
+    -webkit-animation: textglow 1s ease-in-out infinite alternate;
+    -moz-animation: textglow 1s ease-in-out infinite alternate;
+    animation: textglow 1s ease-in-out infinite alternate;
+}
+
+.quotes > div > p{
+    padding: 10px;
+}
+
+#crt:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    bottom: 8%;
+    right: 0%;
+    background: linear-gradient(to bottom,
+            rgba(18, 16, 16, 0) 80%,
+            rgba(0, 0, 0, 0.25) 80%);
+    background-size: 100% 3px;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 100px 100px 100px 100px;
+}
+
+#screen {
+    position: relative;
+    width: 100%;
+    height: 67.5vmin;
+    bottom: 92%;
+
+}
+
+.scanline {
+    width: 100%;
+    height: 100px;
+    z-index: 8;
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(255, 255, 255, 0.2) 10%,
+            rgba(0, 0, 0, 0.1) 100%);
+    opacity: 0.05;
+    position: absolute;
+
+    animation: scanline 5s linear infinite;
+
+
+}
+
+
+@keyframes textShadow {
+    0% {
+        text-shadow: 0.1px 0 .1px rgba(0, 30, 255, 0.5), -0.4389924193300864px 0 .1px rgba(255, 0, 80, 0.3), 0 0 .3px;
+    }
+    1% {
+        text-shadow: .1px 0 .1px rgba(0, 30, 255, 0.5), -2.7928974010788217px 0 .1px rgba(255, 0, 80, 0.3), 0 0 .3px;
+    }
+
+
+}
+
+@keyframes boxShadow {
+
+
+    0% {
+        box-shadow: 0.1px 0 .1px rgba(0, 30, 255, 0.5), -0.4389924193300864px 0 .1px rgba(255, 0, 80, 0.3), 0 0 .3px;
+    }
+
+    1% {
+        box-shadow: .1px 0 .1px rgba(0, 30, 255, 0.5), -2.7928974010788217px 0 .1px rgba(255, 0, 80, 0.3), 0 0 .3px;
+    }
+
+}
+
+@keyframes scanline {
+    0% {
+        bottom: 100%;
+    }
+
+    80% {
+        bottom: 100%;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+}
+
+@-webkit-keyframes textglow {
+    from {
+        text-shadow: 0 0 1px rgb(204, 249, 249), 0 0 2px rgb(204, 249, 249), 0 0 3px rgb(58, 177, 246), 0 0 4px rgb(58, 177, 246), 0 0 5px rgb(58, 177, 246), 0 0 6px rgb(58, 177, 246), 0 0 7px rgb(58, 177, 246);
+    }
+    to {
+        text-shadow: 0 0 2px rgb(204, 249, 249), 0 0 3px rgb(125, 207, 255), 0 0 4px rgb(125, 207, 255), 0 0 5px rgb(125, 207, 255), 0 0 6px rgb(125, 207, 255), 0 0 7px rgb(125, 207, 255), 0 0 8px rgb(125, 207, 255);
+    }
+
+
+}
+
+@-webkit-keyframes boxglow {
+
+    from {
+        box-shadow: 0 0 1px rgb(204, 249, 249), 0 0 2px rgb(204, 249, 249), 0 0 3px rgb(58, 177, 246), 0 0 4px rgb(58, 177, 246), 0 0 5px rgb(58, 177, 246), 0 0 6px rgb(58, 177, 246), 0 0 7px rgb(58, 177, 246);
+    }
+    to {
+        box-shadow: 0 0 2px rgb(204, 249, 249), 0 0 3px rgb(125, 207, 255), 0 0 4px rgb(125, 207, 255), 0 0 5px rgb(125, 207, 255), 0 0 6px rgb(125, 207, 255), 0 0 7px rgb(125, 207, 255), 0 0 8px rgb(125, 207, 255);
+    }
+}
