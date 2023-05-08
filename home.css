@@ -19,7 +19,7 @@ h1{
     margin-top: 5%;
     text-align: center;
     font-family: 'botw_sheikahregular';
-    color: rgb(202, 247, 247);
+    color: rgb(198, 249, 251);
     -webkit-animation: textglow 1s ease-in-out infinite alternate;
     -moz-animation: textglow 1s ease-in-out infinite alternate;
     animation: textglow 1s ease-in-out infinite alternate;
@@ -37,9 +37,9 @@ body{
 body > h2{
     position: absolute;
     left: 107px;
-    top: 270px;
+    top: 235px;
     font-family: 'botw_sheikahregular';
-    color: rgb(202, 247, 247);
+    color: rgb(198, 249, 251);
     -webkit-animation: textglow 1s ease-in-out infinite alternate;
     -moz-animation: textglow 1s ease-in-out infinite alternate;
     animation: textglow 1s ease-in-out infinite alternate;
@@ -55,7 +55,7 @@ body > h2{
 }
 
 .links > a{
-    color: rgb(202, 247, 247);
+    color: rgb(198, 249, 251);
     font-family: 'botw_sheikahregular';
     font-size: 100px;
     padding: 10px;
@@ -69,23 +69,94 @@ body > h2{
 
 }
 
+.homeWin{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 450px;
+    top: 232px;
+    width: 1000px;
+    height: 700px;
+    background-color:rgba(0, 1, 43, 0.389) ;
+    border-radius: 10px;
+    -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+    -moz-animation: boxglow 1s ease-in-out infinite alternate;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+#bkg{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 20%;
+}
+
+#cntnt{
+    size-adjust: 200%;
+    margin: 0;
+    width: auto;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 60%;
+}
+
+.news{
+    position: absolute;
+    bottom: 130px;
+    height: 500px;
+    width: 280px;
+    right: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 1, 43, 0.389);
+    font-family: 'hylia_serif_betaregular';
+    text-align: center;
+    font-family: 'hylia_serif_betaregular';
+    color: rgb(169, 214, 243);
+    -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+    -moz-animation: boxglow 1s ease-in-out infinite alternate;
+    animation: boxglow 1s ease-in-out infinite alternate;
+    border-radius: 10px;
+    background-color: rgba(0, 1, 43, 0.389);
+}
+
+.news > ul{
+    -webkit-animation: textglow 1s ease-in-out infinite alternate;
+    -moz-animation: textglow 1s ease-in-out infinite alternate;
+    animation: textglow 1s ease-in-out infinite alternate;
+}
+
 .quotes{
-    margin-top: 10%;
+    margin-top: 8%;
     margin-right: 80%;
     margin-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     text-align: center;
     font-family: 'hylia_serif_betaregular';
-    color: rgb(202, 247, 247);
+    color: rgb(198, 249, 251);
     -webkit-animation: boxglow 1s ease-in-out infinite alternate;
     -moz-animation: boxglow 1s ease-in-out infinite alternate;
     animation: boxglow 1s ease-in-out infinite alternate;
     border-radius: 10px;
     background-color: rgba(0, 1, 43, 0.389);
 
+}
+
+.quotes > div > h2{
+    font-size: 25px;
 }
 
 .quotes > div{
@@ -96,9 +167,15 @@ body > h2{
     animation: textglow 1s ease-in-out infinite alternate;
 }
 
-.quotes > div > p{
+p{
     padding: 10px;
+    font-size: 16px;
 }
+ul{
+    font-size: 18px;
+}
+
+
 
 #crt:before {
     content: "";
@@ -182,10 +259,10 @@ body > h2{
 
 @-webkit-keyframes textglow {
     from {
-        text-shadow: 0 0 1px rgb(204, 249, 249), 0 0 2px rgb(204, 249, 249), 0 0 3px rgb(58, 177, 246), 0 0 4px rgb(58, 177, 246), 0 0 5px rgb(58, 177, 246), 0 0 6px rgb(58, 177, 246), 0 0 7px rgb(58, 177, 246);
+        text-shadow: 0 0 1px rgb(107, 255, 255), 0 0 1.5px rgb(107, 255, 255), 0 0 2px rgb(71, 188, 255), 0 0 2.5px rgb(71, 188, 255), 0 0 3px rgb(71, 188, 255), 0 0 3.5px rgb(71, 188, 255), 0 0 4px rgb(71, 188, 255);
     }
     to {
-        text-shadow: 0 0 2px rgb(204, 249, 249), 0 0 3px rgb(125, 207, 255), 0 0 4px rgb(125, 207, 255), 0 0 5px rgb(125, 207, 255), 0 0 6px rgb(125, 207, 255), 0 0 7px rgb(125, 207, 255), 0 0 8px rgb(125, 207, 255);
+        text-shadow: 0 0 1.5px rgb(132, 232, 232), 0 0 2px rgb(82, 192, 255), 0 0 2.5px rgb(82, 192, 255), 0 0 3px rgb(82, 192, 255), 0 0 3.5px rgb(82, 192, 255), 0 0 4px rgb(82, 192, 255), 0 0 16px rgb(82, 192, 255);
     }
 
 
