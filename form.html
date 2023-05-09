@@ -7,6 +7,7 @@
 </head>
 
 <body>
+
     <div id="monitor">
         <!-- the rounded edge near the glass -->
         <div id="bezel">
@@ -28,6 +29,65 @@
         <a href="form.html">P</a>
         <a href="images.html">I</a>
     </div>
+
+        <fieldset>
+
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div>
+                <label for="post">Topic</label><br>
+                <input type="text" id="topic" name="topic">
+            </div>
+
+            <div>
+                <label for="image">IMG</label><br>
+                <input type="file" accept="image/jpg, image/png, image/jpeg">
+                <output></output>
+            </div>
+
+            <div>
+                <p>Favorite Zelda Game</p>
+                <div class="buttons">
+                    <input type="radio" id="ww" name="fav_game" value="Wind Waker">
+                    <label for="ww">The Wind Waker</label><br>
+                    <input type="radio" id="oot" name="fav_game" value="Ocarina">
+                    <label for="oot">Ocarina Of Time</label><br>
+                    <input type="radio" id="z1" name="fav_game" value="Zelda I">
+                    <label for="z1">The Legend Of Zelda</label><br>
+                    <input type="radio" id="aol" name="fav_game" value="Zelda II">
+                    <label for="aol">Adventure Of Link</label><br>
+                    <input type="radio" id="mc" name="fav_game" value="Minish Cap">
+                    <label for="mc">The Minish Cap</label><br>
+                    <input type="radio" id="lttp" name="fav_game" value="A Link To The Past">
+                    <label for="lttp">A Link To The Past</label><br>
+                </div>
+            </div>
+
+            <div class="txtA">
+
+                <textarea id="comments" name="comments"></textarea><br>
+                <!-- <label for="comments">Comments</label> -->
+
+                <textarea id="comments" name="comments"></textarea><br>
+            </div>
+
+
+
+            <div class="checkbox">
+                <input type="checkbox" id="signup" name="signup" value="Signup">
+                <label for="signup">Sign up<br> for news</label><br>
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label for="terms"> Agree to<br> terms</label>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </fieldset>
 
 
 

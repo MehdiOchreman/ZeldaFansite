@@ -36,18 +36,20 @@ body {
 
 
 .links {
+    height: auto;
     position: absolute;
-    right: 225px;
-    top: 90px;
+    right: 13%;
+    top: 9%;
     -webkit-animation: textglow 1s ease-in-out infinite alternate;
     -moz-animation: textglow 1s ease-in-out infinite alternate;
     animation: textglow 1s ease-in-out infinite alternate;
 }
 
 .links>a {
+    width: 5%;
     color: rgb(198, 249, 251);
     font-family: 'botw_sheikahregular';
-    font-size: 100px;
+    font-size: 500%;
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
@@ -57,6 +59,37 @@ body {
     -moz-animation: boxglow 1s ease-in-out infinite alternate;
     animation: boxglow 1s ease-in-out infinite alternate;
 
+}
+
+fieldset{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    font-family: 'hylia_serif_betaregular';
+    text-align: center;
+    display:block;
+    color: rgb(198, 249, 251);
+    background-color:rgba(0, 1, 43, 0.389);
+    width: 50%;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    border-radius: 15px;
+    -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+    -moz-animation: boxglow 1s ease-in-out infinite alternate;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+fieldset > div{
+    -webkit-animation: textglow 1s ease-in-out infinite alternate;
+    -moz-animation: textglow 1s ease-in-out infinite alternate;
+    animation: textglow 1s ease-in-out infinite alternate;
+    padding-bottom: 3%;
+}
+
+.txtA{
+    display: flex;
+    justify-content: center;
 }
 
 
