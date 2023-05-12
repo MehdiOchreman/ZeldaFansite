@@ -1,2 +1,3 @@
 # ZeldaFansite
- home page almost complete, still need to fix border glow
+ thats enough for now, doin too much anyway lol.
+ learned some stuff though.
